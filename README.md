@@ -76,3 +76,14 @@ This happens because Spring Security framework by default STOPS requests modifyi
 due to the CSRF protection.
 
 For now, we have solved this by disabling the CSRF protection in the SecurityConfig.
+
+
+## password encoding example using org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
+
+### random salt:
+$2a$10$cbeTaJXHTaEtr2FQa0YN.u
+
+### encoded password in the DB
+{bcrypt}$2a$10$cbeTaJXHTaEtr2FQa0YN.uVYN/tJUYz4rh/DrPKImv4VIPohWPT5K
+
+{bcrypt} $2a$10$cbeTaJXHTaEtr2FQa0YN.u VYN/tJUYz4rh/DrPKImv4VIPohWPT5K
